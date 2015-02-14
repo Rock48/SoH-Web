@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="/css/materialize.min.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="css/manual.css" />
-    <title>Manual - Starting as an Emperor</title>
+    <title>Manual - Foraging From the Environment</title>
 </head>
 <body class="grey darken-4" style="overflow-x: hidden; color:white;">
 <header>
@@ -41,9 +41,9 @@
                     <a class="collapsible-header active waves-effect waves-purple white-text"><b>How Tos</b></a>
                     <div class="collapsible-body">
                         <ul>
-                            <li class="active"><a href="emperor.html" class="waves-effect waves-purple white-text">Starting as an Emperor</a></li>
+                            <li><a href="emperor.html" class="waves-effect waves-purple white-text">Starting as an Emperor</a></li>
                             <li><a href="player.html" class="waves-effect waves-purple white-text">Starting as a Player</a></li>
-                            <li><a href="foraging.html" class="waves-effect waves-purple white-text">Foraging</a></li>
+                            <li class="active"><a href="foraging.html" class="waves-effect waves-purple white-text">Foraging</a></li>
                             <li><a href="flagcraft.html" class="waves-effect waves-purple white-text">Hand-Crafting a Flag</a></li>
                             <li><a href="firstcity.html" class="waves-effect waves-purple white-text">Building Your First City</a></li>
                             <li><a href="moonbase.html" class="waves-effect waves-purple white-text">Building a Moonbase</a></li>
@@ -94,32 +94,65 @@
 <main>
     <div class="container">
         <!-- Infomation -->
-        <h1>Starting as a New Emperor</h1>
-        <hr />
+        <h1>Foraging from the Environment</h1>
+        <p>Many raw materials can be foraged directly from the environment. Not all resources are available in every environment.</p>
+        <p>Foraging involves two basic steps:</p>
+        <ol>
+            <li>Locate the resource you want to forage.</li>
+            <li>Pick it up.</li>
+        </ol>
 
-        <h4>Garden of Eden</h4>
-        <p>Your new emperor character spawns in the wilderness of your home world, usually in daylight. Your home world is a habitable world that has never been explored or visited by any other player in the game.</p>
+        <h4>Locating Natural Resources</h4>
+        <p><b>Top-down view is the easiest way to locate natural resources in your area.</b> Press the Backspace key to switch between top-down view and the first-person view of your character.</p>
+        <p>Top-down view shows several categories of information. Cycle between six different categories of information displayed using the \ and Shift+\ keys.</p>
 
-        <p>Wild animals will ignore you, even if you attack and injure them. If you die, you will respawn where you fall.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th data-field="category">Category</th>
+                    <th data-activates="info">Information</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rocks</td>
+                    <td>Shows presence of mineral resources.</td>
+                </tr>
+                <tr>
+                    <td>Minerals</td>
+                    <td>Similar to rocks, but hides common things such as <b>Stone</b> and <b>Eludium</b></td>
+                </tr>
+                <tr>
+                    <td>Plants</td>
+                    <td>Shows plant resources. Green indicates only shrubbery. Brown indicates trees and possibly shrubbery. Purple indicates dense trees and possibly shrubbery.</td>
+                </tr>
+                <tr>
+                    <td>Buildings</td>
+                    <td>Shows types and tech level of buildings.</td>
+                </tr>
+                <tr>
+                    <td>Roads</td>
+                    <td>Shows roads and slabs.</td>
+                </tr>
+                <tr>
+                    <td>Cities</td>
+                    <td>Shows city ownership of each building and road.</td>
+                </tr>
+                <tr>
+                    <td>None</td>
+                    <td>Shows no information, just a clean top-down view.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Walk to the natural resource you want to forage. Look at the ground at the base of the resource, whether it is a rock or a tree or a shrub. Press the ~ key to get a spot description of the terrain at that location. The description will include the type and quality of natural resource that is present.</p>
+        
+        <h4>Picking Up Natural Resources</h4>
+        <img src="images/icons/HandLeft.png" align="left">
+        <p>Natural resources are picked up from the ground using the hand cursor. Press Enter or hold the Ctrl key to use the hand cursor.</p>
+        <p>Click on the ground at the center of where the rock, shrub, or tree touches the ground to forage from it. You cannot forage from the trunk or branches of a plant. Some shrubs spread in a broad area around the center of their location which may make the click location look like open empty ground. Even so, you must click on the ground at the center of where the rock, shrub, or tree touches the ground to forage from it.</p>
+        <p>If there is room in your inventory, an item foraged from the environment will be added to your inventory.</p>
 
-        <p>This is the Garden of Eden. Expore the world in peace. Choose a place to build a civilization.</p>
-
-        <h4>Targoss</h4>
-        <p>Targoss approaches and begins to speak.</p>
-
-        <p>Targoss is a non-player character of your race. Targoss teaches you the basics of moving around and interacting with the game environment. Targoss is love. Targoss is life.</p>
-
-        <h4>Rise of Civilization</h4>
-
-        <p>Build a city to assert your claim as the ascendent race on the planet.</p>
-
-        <img align="left" src="images/icons/FlagTownSqare.png">
-
-        <p>Once you start building a city, wild animals will no longer ignore you. They may choose to eat you or attack you for other reasons. If you die, you will respawn in the city.</p>
-
-        <p>This begins the Rise of Civilization. The ultimate goal of civilization is to develop space travel and spread your race into the galaxy.</p>
-
-        <a href="foraging.html" class="btn-large waves-effect waves-light center-align">Next (How Tos/Foraging From the Environment) -></a>
+        <a href="flagcraft.html" class="btn-large waves-effect waves-light center-align">Next (HowTos/Hand-Crafting a Flag) -></a>
     </div>
 </main>
 
@@ -130,9 +163,9 @@
     $(document).ready(function(){
         $(".dropdown-button").dropdown({hover: false});
         $(".collapsible").collapsible();
-        $(".collapsible-header.active").click();
         $('.parallax').parallax();
         $('.button-collapse').sideNav();
+        $(".collapsible-header.active").click();
     });
 </script>
 </body>
