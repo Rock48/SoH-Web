@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <title>Shores of Hazeron</title>
+
+    <style>
+        body {
+            background-color: #212121;
+            color: #eceff1;
+        }
+        .navbar-fixed {
+            z-index: 200;
+        }
+
+        .fit {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .gradient {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0) 35%,black 100%);
+        }
+    </style>
+</head>
+<body style="overflow: hidden;">
+    <ul id="stats-dropdown" class="dropdown-content indigo" style="margin-top: 64px">
+        <li><a href="#" class="white-text waves-effect waves-light">Servers</a></li>
+        <li><a href="#" class="white-text waves-effect waves-light">Avatars</a></li>
+        <li><a href="#" class="white-text waves-effect waves-light">Empires</a></li>
+    </ul>
+    <ul id="resources-dropdown" class="dropdown-content indigo" style="margin-top: 64px">
+        <li><a href="manual" class="white-text waves-effect waves-light">Manual</a></li>
+        <li><a href="#" class="white-text waves-effect waves-light">Forums</a></li>
+    </ul>
+    <nav class="navbar-fixed indigo darken-4">
+        <div class="nav-wrapper">
+            <a href="/"><img src="/images/logo.png" style="height: 128px"></a>
+            <ul class="right">
+                <li class="waves-effect waves-light"><a href="/">Home</a></li>
+                <li class="waves-effect waves-light"><a href="#">Accounts</a></li>
+                <li class="waves-effect waves-light"><a href="#">Downloads</a></li>
+                <li class="waves-effect waves-light"><a href="#">Contact Us</a></li>
+                <li class="waves-effect waves-light"><a class="dropdown-button" href="#" data-activates="resources-dropdown">Resources<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+                <li class="waves-effect waves-light"><a class="dropdown-button" href="#" data-activates="stats-dropdown">Stats<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="slider fullscreen">
+            <ul class="slides">
+                <li>
+                    <img src="images/title/title1.png" class="fit">
+                    <div class="gradient">
+                        <div class="caption center-align">
+                            <h3>Shores of Hazeron is an ambitious and revolutionary game set in a science fiction universe</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/title/title2.png" class="fit">
+                    <div class="gradient">
+                        <div class="caption left-align">
+                            <h3>We took a new approach</h3>
+                            <h5 class="light grey-text text-lighten-3">No off-the-shelf 3D engine was used except OpenGL. Years were devoted to developing entirely new methods and techniques. No cut scenes are ever used to make the transition from one place to another. Walk from terrain onto a spacecraft. Fly that spacecraft into space; travel to another world; choose where to enter its atmosphere and land there; step out of the spacecraft onto the terrain. The only semblance of a cut scene is a shooting-stars effect that appears as you transition from one solar system to another. The result is the biggest most realistic and usable science fiction universe that has ever been attempted.</h5>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/title/title4.png" class="fit">
+                    <div class="gradient">
+                        <div class="caption left-align">
+                            <h3 >Are you tired of the air tight movie sets of contemporary 3D games?</h3>
+                            <h5 class="light grey-text text-lighten-3">No places are off-limits in Shores of Hazeron. Face any direction and start to walk or swim or fly a riding beast or ride a dirt bike or sailboat. At best you'll circle the globe and return to your starting point; more likely something will kill you and eat you along the way. Build a city to manufacture spacecraft; pick a star in the sky and go there. Explore its planets and moons. Build cities and defenses. Expand your empire and prepare to meet the unknown.</h5>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/title/title3.png" class="fit">
+                    <div class="gradient">
+                        <div class="caption left-align">
+                            <h3>Do you want to discover strange new worlds, beam down and see what's there?</h3>
+                            <h5 class="light grey-text text-lighten-3">Shores of Hazeron contains millions of worlds and trillions of plants and quadrillions of creatures that no person has ever seen, not even us. Procedural generation of worlds, including the DNA of its plants and animals, results in nearly limitless variations. Fly to any planet you see; no planet is just a picture in the sky. That's not a worn out movie set down below; it's a dense jungle on the coast of a continent; something lives there. Where to land? Which troops to take on the away team?</h5>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/title/title5.png" class="fit">
+                    <div class="gradient">
+                        <div class="caption left-align">
+                            <h3>Does designing your own sentient race appeal to you?</h3>
+                            <h5 class="light grey-text text-lighten-3">Player characters are created using the same DNA as the animals so the choices are nearly endless. Would your race be a typical bipedal human form, or something completely different, like a speckled two-headed bug, or a gilled fish dude with wings that flies, or even a glowing pink warty thing with a long trunk that leaps like a frog? In Shores of Hazeron you design your own race then spread your race throughout the galaxy.</h5>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/title/title6.png" class="fit">
+                    <div class="gradient">
+                        <div class="caption left-align">
+                            <h3>Have you dreamed about the starship you would drive?</h3>
+                            <h5 class="light grey-text text-lighten-3">The Enterprise? Nostromo? The Millennium Falcon? A Death Star? Perhaps the Battlestar Galactica? Maybe a Borg cube is more your style? In Shores of Hazeron you design your own deck plans and lay out the systems of your spacecraft, balancing performance against capability, mass against force. Then you manufacture your ship and climb aboard. Simply walk|slither|hunker|crawl|fly|ride|drive through an operable door that opens and closes at your command. Turn the lights on. Walk through its halls. Use control stations to operate the systems of your spacecraft, including transporters to beam to|from planets or other spacecraft.</h5>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/title/title8.png" class="fit">
+                    <div class="gradient">
+                        <div class="caption left-align">
+                            <h3>Can you command a starship?</h3>
+                            <h5 class="light grey-text text-lighten-3">AI controlled crewmen and troops can operate all the stations and weapons of your spacecraft, carrying out your orders. Other players can also operate the stations and weapons of your spacecraft for ultimate performance. Trade cargo and execute missions to earn money. Prepare to encounter the unknown first-hand. Sensor contact! Are they hostile? Shields up, 80% to front! Lock-on weapons and FIRE! Their shields are down. Energize transporters. Boarding party, follow me!</h5>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/title/title7.png" class="fit">
+                    <div class="gradient">
+                        <div class="caption left-align">
+                            <h3>Would you play a massively multi player space game?</h3>
+                            <h5 class="light grey-text text-lighten-3">This is a real game, the kind that can be won and lost. Players are organized into empires. Empires are established and maintained by players in the game itself. Your empire can expand and win or be crushed out of existence. Ultimately, Shores of Hazeron is a game of self reliance. No matter where you find yourself, even if reduced to an empty world in some unexplored region of space, you have all that you need to reach for the stars.</h5>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.slider').slider({interval: 30000});
+            $(".dropdown-button").dropdown({hover: false});
+        });
+    </script>
+</body>
+</html>

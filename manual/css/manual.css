@@ -1,0 +1,82 @@
+header, main, footer {
+    padding-left: 240px;
+}
+
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+        padding-left: 0;
+    }
+}
+
+ul.side-nav.fixed li.logo {
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #ddd; }
+
+ul.side-nav.fixed li.logo:hover {
+    background-color: transparent; }
+
+ul.side-nav.fixed li {
+    line-height: 44px;
+}
+
+ul.side-nav.fixed li:hover, ul.side-nav.fixed li.active {
+    background-color: rgba(0, 0, 0, 0.2); }
+
+ul.side-nav.fixed li a {
+    font-size: 13px; }
+
+ul.side-nav.fixed ul.collapsible-accordion {
+    background-color: #3949ab; }
+
+ul.side-nav.fixed:hover {
+    overflow-y: auto; }
+
+ul.side-nav ul.collapsible {
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+
+ul.side-nav ul.collapsible li {
+    padding: 0; }
+
+ul.side-nav .collapsible-header {
+    background-color: transparent;
+    border: none;
+    line-height: inherit;
+    height: inherit;
+    margin: 0 1rem; }
+
+ul.side-nav .collapsible-header i {
+    line-height: inherit; }
+
+ul.side-nav .collapsible-body {
+    border: 0;
+    background-color: #3949ab; }
+
+ul.side-nav .collapsible-body li a {
+    margin: 0 1rem 0 2rem; }
+
+ul.side-nav .collapsible-body li.active, ul.side-nav.fixed .collapsible-body li.active {
+    background-color: #ee6e73; }
+ul.side-nav .collapsible-body li.active a, ul.side-nav.fixed .collapsible-body li.active a {
+    color: #ee6e73; }
+
+a.button-collapse.top-nav {
+    position: absolute;
+    left: 5%;
+    top: 0;
+    float: none;
+    margin-left: 1rem;
+    color: #fff;
+    font-size: 32px;
+    z-index: 2; }
+a.button-collapse.top-nav.full {
+    line-height: 64px; }
+
+@media only screen and (max-width : 600px) {
+    a.button-collapse.top-nav {
+        left: 2.5%; }
+}
