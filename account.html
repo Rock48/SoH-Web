@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <title>Shores of Hazeron</title>
+
+    <style>
+        body {
+            background-color: #212121;
+            color: #eceff1;
+        }
+        .navbar-fixed {
+            z-index: 200;
+        }
+
+        .fit {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .gradient {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0) 35%,black 100%);
+        }
+    </style>
+</head>
+<body class="grey darken-4" style="overflow: hidden;">
+<ul id="stats-dropdown" class="dropdown-content indigo" style="margin-top: 64px">
+    <li><a href="#" class="white-text waves-effect waves-light">Servers</a></li>
+    <li><a href="#" class="white-text waves-effect waves-light">Avatars</a></li>
+    <li><a href="#" class="white-text waves-effect waves-light">Empires</a></li>
+</ul>
+<ul id="resources-dropdown" class="dropdown-content indigo" style="margin-top: 64px">
+    <li><a href="manual" class="white-text waves-effect waves-light">Manual</a></li>
+    <li><a href="#" class="white-text waves-effect waves-light">Forums</a></li>
+</ul>
+<nav class="navbar-fixed indigo darken-4">
+    <div class="nav-wrapper">
+        <a href="/"><img src="/images/logo.png" style="height: 128px"></a>
+        <ul class="right">
+            <li class="waves-effect waves-light"><a href="/">Home</a></li>
+            <li class="waves-effect waves-light"><a href="/account.html">Accounts</a></li>
+            <li class="waves-effect waves-light"><a href="#">Downloads</a></li>
+            <li class="waves-effect waves-light"><a href="#">Contact Us</a></li>
+            <li class="waves-effect waves-light"><a class="dropdown-button" href="#" data-activates="resources-dropdown">Resources<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+            <li class="waves-effect waves-light"><a class="dropdown-button" href="#" data-activates="stats-dropdown">Stats<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+        </ul>
+    </div>
+</nav>
+<h1>WIP Page</h1>
+<div class="container">
+    <div class="row">
+        <div class="col m6">
+            <div class="card" style="padding: 2em;">
+                <header class="card-title black-text">Create an Account</header>
+                <div class="row">
+                    <form class="input-field col s12">
+                        <input id="acctname" name="acctname" type="text" class="validate" />
+                        <label for="acctname">Account Name</label>
+                    </form>
+                </div><div class="row">
+                    <form class="input-field col s6">
+                        <input id="password" name="password" type="password" class="validate" />
+                        <label for="password">Password</label>
+                    </form>
+                    <form class="input-field col s6">
+                        <input id="passwordrepeat" name="passwordrepeat" type="password" class="validate" />
+                        <label for="passwordrepeat">Repeat Password</label>
+                    </form>
+                </div><div class="row">
+                    <form class="input-field col s9">
+                        <input id="email" name="email" type="email" class="validate" />
+                        <label for="email">Email</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.slider').slider({interval: 30000});
+        $(".dropdown-button").dropdown({hover: false});
+    });
+</script>
+</body>
+</html>
