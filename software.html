@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <title>Shores of Hazeron - Downloads</title>
+
+    <style>
+        body {
+            background-color: #212121;
+            color: #eceff1;
+        }
+        .navbar-fixed {
+            z-index: 200;
+        }
+
+        .fit {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .gradient {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0) 35%,black 100%);
+        }
+    </style>
+</head>
+<body style="overflow: hidden;">
+<ul id="stats-dropdown" class="dropdown-content indigo" style="margin-top: 64px">
+    <li><a href="/servers.html" class="white-text waves-effect waves-light">Servers</a></li>
+    <li><a href="/avatars.html" class="white-text waves-effect waves-light">Avatars</a></li>
+    <li><a href="/empires.html" class="white-text waves-effect waves-light">Empires</a></li>
+</ul>
+<ul id="resources-dropdown" class="dropdown-content indigo" style="margin-top: 64px">
+    <li><a href="/manual" class="white-text waves-effect waves-light">Manual</a></li>
+    <li><a href="#" class="white-text waves-effect waves-light">Forums</a></li>
+</ul>
+<nav class="navbar-fixed indigo darken-4">
+    <div class="nav-wrapper">
+        <a href="/"><img src="/images/logo.png" style="height: 128px"></a>
+        <ul class="right">
+            <li class="waves-effect waves-light"><a href="/">Home</a></li>
+            <li class="waves-effect waves-light"><a href="/account.html">Accounts</a></li>
+            <li class="waves-effect waves-light"><a href="/software.html">Downloads</a></li>
+            <li class="waves-effect waves-light"><a href="/contact.html">Contact Us</a></li>
+            <li class="waves-effect waves-light"><a class="dropdown-button" href="#" data-activates="resources-dropdown">Resources<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+            <li class="waves-effect waves-light"><a class="dropdown-button" href="#" data-activates="stats-dropdown">Stats<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <h1>Downloads</h1>
+    <h4>New Players</h4>
+    <p>If you are new to Shores of Hazeron, please download the launcher and run the program in <b>Primeval World</b> mode. This will give you a limited view of the <i>Shores of Hazeron</i> game environment.</p>
+    <p><f class="yellow-text">More importantly</f>, the primeval world runs some of the most demanding client-side portions of the Shores of Hazeron program. Performing this exercise will verify that the program runs on your computer at all.</p>
+    <p>You can also test drive the <i>Shores of Hazeron</i> spacecraft designer.</p>
+    <h4>Shores of Hazeron Launcher</h4>
+    <p>The <i>Shores of Hazeron Launcher</i> performs two important tasks. First, it insures that your Shores of Hazeron files are in sync with the current release of the software. The launcher fixes any file that is altered, damaged or lost. Second, the launcher acts as a central hub for launching the various separate programs that make up <i>Shores of Hazeron.</i></p>
+    <p>Use these links to download the <i>Shores of Hazeron Launcher</i> that is appropriate to your computer. The file is small, about 10MB to 20MB depending on your operating system. <b>The download is free.</b></p>
+
+    <p><a href="http://www.hazeron.com/software/HazeronInstall64.exe"><i>Shores of Hazeron Launcher</i> for Windows 7/8/8.1/10 64-bit</a> Posted February 14, 2015 18:01:18. File Size 22.54MB.</p>
+    <p><a href="http://www.hazeron.com/software/ShoresOfHazeron64deb7.tar.gz"><i>Shores of Hazeron Launcher</i> for Debian 6 64-bit</a> Posted February 14, 2015 18:56:05. File Size 11.14MB.</p>
+    <p><a href="http://www.hazeron.com/software/ShoresOfHazeron64fed17.tar.gz"><i>Shores of Hazeron Launcher</i> for Fedora 17 64-bit</a> Posted February 14, 2015 18:53:09. File Size 10.68MB.</p>
+    <p><a href="http://www.hazeron.com/software/ShoresOfHazeron64ub14.tar.gz"><i>Shores of Hazeron Launcher</i> fir Ubuntu 12/13/14 64-bit</a> Posted February 14, 2015 17:16:29. File Size 10.79MB.</p>
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.slider').slider({interval: 30000});
+        $(".dropdown-button").dropdown({hover: false});
+    });
+</script>
+</body>
+</html>

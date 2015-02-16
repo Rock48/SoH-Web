@@ -46,39 +46,147 @@
         <ul class="right">
             <li class="waves-effect waves-light"><a href="/">Home</a></li>
             <li class="waves-effect waves-light"><a href="/account.html">Accounts</a></li>
-            <li class="waves-effect waves-light"><a href="#">Downloads</a></li>
-            <li class="waves-effect waves-light"><a href="#">Contact Us</a></li>
+            <li class="waves-effect waves-light"><a href="/software.html">Downloads</a></li>
+            <li class="waves-effect waves-light"><a href="/contact.html">Contact Us</a></li>
             <li class="waves-effect waves-light"><a class="dropdown-button" href="#" data-activates="resources-dropdown">Resources<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
             <li class="waves-effect waves-light"><a class="dropdown-button" href="#" data-activates="stats-dropdown">Stats<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
         </ul>
     </div>
 </nav>
-<h1>WIP Page</h1>
 <div class="container">
+    <h1>Accounts</h1>
+    <p>A new <i>Shores of Hazeron</i> account costs <b>$5</b>. You get the first 15 days of on line play for that $5. After that, the cost is $10 per month to continue playing.</p>
+    <p>Be sure to check the system requirements to see if <i>Shores of Hazeron</i> will work on your computer. <a href="/software.html">Download the software</a> and run it in <b>Primeval World</b> to ensure the program will run.</p>
+    <h4><b>Buyer Beware!</b></h4>
+    <p>Some people feel that Shores of Hazeron is not complete enough to charge money to play. If you would prefer to play a game that is more polished and complete, yet offers some of the same beautiful scenes of space offered by <i>Shores of Hazeron</i>, perhaps <a href="http://gw.softwareengineering.com/"><i>Gravity Well</i></a> would be a better choice for you.</p>
+    <p>On the other hand, if you would like to play a game of space unlike anything that has ever come before, please, join us. <i>Shores of Hazeron</i> was free to play on line for more than five years, then was taken down August 2014 because I could not afford it any more. The only reason it is here again now is because of the number of players who begged, implored, cajoled, negotiated, demanded that I bring it back.</p>
+    <p>Many players were with us for most of that time; that says a lot. <i>Shores of Hazeron</i> is constantly being developed and changing; that results in program glitches that can infuriate players. Program code is like soft clay, not brittle potato chips; program errors are fixed and those problems go away. The "old timers" certainly ran into frustrations at times and many of them were rewarded when they stuck with it; that's life on the "bleeding edge" of software development.</p>
+    <p>At present, this project is entirely funded, developed, and maintained by a single person who goes by the alias Haxus. He works hard day and night on Shores of Hazeron to make the ultimate game of science fiction ever made.</p>
+    <p>Here are some quotes from actual players.
+
+    <p style="font-size: small;">&emsp;&emsp;"SoH has features that make main stream game developers cry tears of blood." - Martok I think</p>
+    <p style="font-size: small;">&emsp;&emsp;At news of SoH coming back on line, "Oh thank god. has been a long dark past few months trying every game out there. I almost teared up the first time I heard the com tone on Gravity Well. lol" - xxqpxx-PMW</p>
+    <p style="font-size: small;">&emsp;&emsp;"Hazeron is quite possibly the greatest game ever made. Hazeron is the game I craved for countless years, I was ecstatic when a friend showed it to me for the first time. And heartbroken when it went offline. But its back, and I'm happier than ever!" - jstylen</p>
+    <p style="font-size: small;">&emsp;&emsp;"Glad to see SOH is coming back. I honestly have no issue paying $10 a month as long as he is planning to develop the game." - Zephar</p>
+    <p style="font-size: small;">&emsp;&emsp;"Great games are rare nowadays. Gems even more rare. And hazeron is one hell of a gem." - robske</p>
+
+    <p>You may also manage your account from this page and do things such as change your email address, password, and reset your password if you forgot it.</p>
+
     <div class="row">
-        <div class="col m6">
-            <div class="card" style="padding: 2em;">
+        <div class="col l6 s12">
+            <div class="card black-text" style="padding: 2em;">
                 <header class="card-title black-text">Create an Account</header>
-                <div class="row">
-                    <form class="input-field col s12">
-                        <input id="acctname" name="acctname" type="text" class="validate" />
-                        <label for="acctname">Account Name</label>
-                    </form>
-                </div><div class="row">
-                    <form class="input-field col s6">
-                        <input id="password" name="password" type="password" class="validate" />
-                        <label for="password">Password</label>
-                    </form>
-                    <form class="input-field col s6">
-                        <input id="passwordrepeat" name="passwordrepeat" type="password" class="validate" />
-                        <label for="passwordrepeat">Repeat Password</label>
-                    </form>
-                </div><div class="row">
-                    <form class="input-field col s9">
-                        <input id="email" name="email" type="email" class="validate" />
-                        <label for="email">Email</label>
-                    </form>
-                </div>
+                <p>Fill in the blanks below to create a new account. All fields are required. Your "Account Name" is not your character's name and is not seen in-game.</p>
+                <form method="post" action="http://www.hazeron.com/cgi-bin/AcctNew">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input required="required" id="acctname" name="acctname" type="text" class="validate" />
+                            <label for="acctname">Account Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input required="required" id="password" name="password1" type="password" class="validate" />
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input required="required" id="passwordrepeat" name="password2" type="password" class="validate" />
+                            <label for="passwordrepeat">Repeat Password</label>
+                        </div>
+                        <script>
+                            var checkCreateValid = function() {
+                                if ($("#password").val() != $("#passwordrepeat").val()) {
+                                    $("#passwordrepeat")[0].setCustomValidity("Passwords must match.");
+                                } else {
+                                    $("#passwordrepeat").click()[0].setCustomValidity("");
+                                }
+                            };
+                        </script>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input required="required" id="email" name="email" type="email" class="validate" />
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <input disabled type="checkbox" name="newsletter" id="newsletterbox"/>
+                    <label for="newsletterbox">Subscribe to Newsletter?</label>
+                    <input class="btn right" type="submit" value="Submit" name="accnew_submit">
+                </form>
+            </div>
+            <div class="card black-text" style="padding: 2em;">
+                <header class="card-title black-text">Reset Password</header>
+                <p>Enter an account name. A new password will be created for the account. The new password will be sent to the e-mail address on record for the account.</p>
+                <form method="post" action="http://www.hazeron.com/cgi-bin/AcctSendPassword">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input required="required" id="acctnamerpswd" name="acctname" type="text" class="validate" />
+                            <label for="acctnamerpswd">Account Name</label>
+                        </div>
+                    </div>
+                    <input class="btn right" type="submit" value="Submit" name="ch_pass_submit">
+                </form>
+            </div>
+        </div>
+        <div class="col l6 s12">
+            <div class="card black-text" style="padding: 2em;">
+                <header class="card-title black-text">Change Account Password</header>
+                <p>Fill in the blanks below to change a login account password for Shores of Hazeron. All fields are required.</p>
+                <form method="post" action="http://www.hazeron.com/cgi-bin/AcctPassword">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input required="required" id="acctnamechpswd" name="acctname" type="text" class="validate" />
+                            <label for="acctnamechpswd">Account Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input required="required" id="oldpasswordchpswd" name="password" type="password" class="validate" />
+                            <label for="oldpasswordchpswd">Old Password</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input required="required" id="passwordchpswd" name="newpassword1" type="password" class="validate" />
+                            <label for="passwordchpswd">New Password</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input required="required" id="passwordrepeatchpswd" name="newpassword2" type="password" class="validate" />
+                            <label for="passwordrepeatchpswd">Repeat New Password</label>
+                        </div>
+                        <script>
+                            var checkChangeValid = function() {
+                                if ($("#passwordchpswd").val() != $("#passwordrepeatchpswd").val()) {
+                                    $("#passwordrepeatchpswd")[0].setCustomValidity("Passwords must match.");
+                                } else {
+                                    $("#passwordrepeatchpswd").click()[0].setCustomValidity("");
+                                }
+                            };
+                        </script>
+                    </div>
+                    <input class="btn right" type="submit" value="Submit" name="ch_pass_submit">
+                </form>
+            </div>
+            <div class="card black-text" style="padding: 2em;">
+                <header class="card-title black-text">Change Email</header>
+                <p>Fill in the blanks below to change a login account e-mail address for Shores of Hazeron. All fields are required</p>
+                <form method="post" action="http://www.hazeron.com/cgi-bin/AcctEmail">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input required="required" type="text" name="acctname" id="acctnameem" class="validate" class="validate"/>
+                            <label for="acctnameem">Account Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input required="required" type="password" name="password" id="passwordem" class="validate"/>
+                            <label for="passwordem">Password</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input required="required" type="email" name="newemail" id="emailem" class="validate"/>
+                            <label for="emailem">New Email</label>
+                        </div>
+                    </div>
+                    <input class="btn right" type="submit" value="Submit" name="emailchange_submit">
+                </form>
             </div>
         </div>
     </div>
@@ -91,6 +199,10 @@
     $(document).ready(function(){
         $('.slider').slider({interval: 30000});
         $(".dropdown-button").dropdown({hover: false});
+        $("#passwordchpswd").change(checkChangeValid);
+        $("#passwordrepeatchpswd").change(checkChangeValid);
+        $("#password").change(checkCreateValid);
+        $("#passwordrepeat").change(checkCreateValid);
     });
 </script>
 </body>
