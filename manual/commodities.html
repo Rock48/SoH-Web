@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="/css/materialize.min.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/manual.css"/>
+    <title>Manual - Commodities</title>
+</head>
+<body class="grey darken-4" style="overflow-x: hidden; color:white;">
+<header>
+    <ul id="stats-dropdown" class="dropdown-content indigo" style="margin-top: 64px">
+        <li><a href="/servers.html" class="white-text waves-effect waves-light">Servers</a></li>
+        <li><a href="/avatars.html" class="white-text waves-effect waves-light">Avatars</a></li>
+        <li><a href="/empires.html" class="white-text waves-effect waves-light">Empires</a></li>
+    </ul>
+    <ul id="resources-dropdown" class="dropdown-content indigo" style="margin-top: 64px">
+        <li><a href="/manual" class="white-text waves-effect waves-light">Manual</a></li>
+        <li><a href="#" class="white-text waves-effect waves-light">Forums</a></li>
+    </ul>
+    <nav class="navbar-fixed indigo darken-4">
+        <div class="container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full"><i
+                class="mdi-navigation-menu"></i></a></div>
+        <div class="nav-wrapper">
+            <ul class="right">
+                <li class="waves-effect waves-light"><a href="/">Home</a></li>
+                <li class="waves-effect waves-light"><a href="/account.html">Accounts</a></li>
+                <li class="waves-effect waves-light"><a href="/software.html">Downloads</a></li>
+                <li class="waves-effect waves-light"><a href="/contact.html">Contact Us</a></li>
+                <li class="waves-effect waves-light"><a class="dropdown-button" href="#"
+                                                        data-activates="resources-dropdown">Resources<i
+                        class="mdi-navigation-arrow-drop-down right"></i></a></li>
+                <li class="waves-effect waves-light"><a class="dropdown-button" href="#"
+                                                        data-activates="stats-dropdown">Stats<i
+                        class="mdi-navigation-arrow-drop-down right"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul id="nav-mobile" class="side-nav fixed indigo darken-1">
+        <li class="logo"><a id="logo-container" href="/" class="brand-logo">
+            <img src="/images/logo.png" width="156"></a></li>
+        <li><b><a href="/manual" class="waves-effect waves-purple white-text">The Game</a></b></li>
+        <li><b><a href="faq.html" class="waves-effect waves-purple white-text">FAQ/Glossary</a></b></li>
+        <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+                <li>
+                    <a class="collapsible-header waves-effect waves-purple white-text"><b>How Tos</b></a>
+
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="emperor.html" class="waves-effect waves-purple white-text">Starting as an
+                                Emperor</a></li>
+                            <li><a href="player.html" class="waves-effect waves-purple white-text">Starting as a
+                                Player</a></li>
+                            <li><a href="foraging.html" class="waves-effect waves-purple white-text">Foraging</a></li>
+                            <li><a href="flagcraft.html" class="waves-effect waves-purple white-text">Hand-Crafting a
+                                Flag</a></li>
+                            <li><a href="firstcity.html" class="waves-effect waves-purple white-text">Building Your
+                                First City</a></li>
+                            <li><a href="moonbase.html" class="waves-effect waves-purple white-text">Building a
+                                Moonbase</a></li>
+                            <li><a href="cargo.html" class="waves-effect waves-purple white-text">Buying and Selling
+                                Cargo</a></li>
+                            <li><a href="personalItems.html" class="waves-effect waves-purple white-text">Buying and
+                                Personal Items</a></li>
+                            <li><a href="commspace.html" class="waves-effect waves-purple white-text">Commanding
+                                Spacecraft</a></li>
+                            <li><a href="designspsh.html" class="waves-effect waves-purple white-text">Designing
+                                Spaceships</a></li>
+                            <li><a href="designsppo.html" class="waves-effect waves-purple white-text">Designing
+                                Spaceports</a></li>
+                            <li><a href="designstsh.html" class="waves-effect waves-purple white-text">Designing
+                                Starships</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a class="collapsible-header active waves-effect waves-purple white-text"><b>Topics/Concepts</b></a>
+
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="empires.html" class="waves-effect waves-purple white-text">Empires</a></li>
+                            <li><a href="ai.html" class="waves-effect waves-purple white-text">AI Controlled Empires</a>
+                            </li>
+                            <li><a href="animals.html" class="waves-effect waves-purple white-text">Animals</a></li>
+                            <li><a href="atmosphere.html" class="waves-effect waves-purple white-text">Atmosphere</a>
+                            </li>
+                            <li><a href="cities.html" class="waves-effect waves-purple white-text">Cities & Citizens</a>
+                            </li>
+                            <li class="active"><a href="commodities.html" class="waves-effect waves-purple white-text">Commodities</a>
+                            </li>
+                            <li><a href="comms.html" class="waves-effect waves-purple white-text">Communication</a></li>
+                            <li><a href="construction.html"
+                                   class="waves-effect waves-purple white-text">Construction</a></li>
+                            <li><a href="designst.html" class="waves-effect waves-purple white-text">Design Studio</a>
+                            </li>
+                            <li><a href="economy.html" class="waves-effect waves-purple white-text">Economy</a></li>
+                            <li><a href="farms.html" class="waves-effect waves-purple white-text">Farms</a></li>
+                            <li><a href="space.html" class="waves-effect waves-purple white-text">Space</a></li>
+                            <li><a href="controls.html" class="waves-effect waves-purple white-text">Controls</a></li>
+                            <li><a href="manufacturing.html"
+                                   class="waves-effect waves-purple white-text">Manufacturing</a></li>
+                            <li><a href="plants.html" class="waves-effect waves-purple white-text">Plants</a></li>
+                            <li><a href="rocks.html" class="waves-effect waves-purple white-text">Rocks</a></li>
+                            <li><a href="character.html" class="waves-effect waves-purple white-text">Character</a></li>
+                            <li><a href="technology.html" class="waves-effect waves-purple white-text">Tech Level</a>
+                            </li>
+                            <li><a href="trade.html" class="waves-effect waves-purple white-text">Trade</a></li>
+                            <li><a href="units.html" class="waves-effect waves-purple white-text">Unit Command</a></li>
+                            <li><a href="vehicles.html" class="waves-effect waves-purple white-text">Vehicles</a></li>
+                            <li><a href="ftl.html" class="waves-effect waves-purple white-text">FTL Travel</a></li>
+                            <li><a href="planets.html" class="waves-effect waves-purple white-text">Planets</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+</header>
+<main>
+    <div class="container">
+        <!-- Infomation -->
+        <h1>Commodities</h1>
+        <p>Commodities are the basis for the entire economic system in <i>Shores of Hazeron</i>. All man-made objects are <a href="construction.html">constructed</a> or <a href="manufacture.html">manufactured</a> using commodities, including <a href="construction.html  ">buildings</a>, <a href="vehicles.html">vehicles</a> and <a href="spacecraft.html">spacecraft</a>.</p>
+        <ul>
+            <li>Buildings are constructed using commodities. </li>
+            <li>Buildings use commodities in their manufacturing processes.</li>
+            <li>Spacecraft and vehicles are manufactured using commodities.</li>
+            <li>Commodities are needed for fuel, ammunition, and repairs to buildings, vehicles, and spacecraft.</li>
+            <li>Player characters and citizen populations eat and drink food commodities to stay alive. People consume Air in harsh environments.</li>
+        </ul>
+        <p>Commodities are manufactured from other commodities or they are acquired from the environment. The chain of all commodity production begins with raw materials from the environment.</p>
+        <p>Commodities have <b>condition</b> factors. The <b>maximum condition</b> of a commodity is a measure of its overall durability; a commodity with a high maximum condition takes longer to wear out than a commodity with a low maximum condition. The <b>current condition</b> of a commodity is an indication of its state of repair. As a commodity wears down, its current condition is reduced. A commodity can be repaired before the current condition reaches zero, raising the current condition back to the maximum. When the current condition reaches zero, the commodity is irreparably broken and removed from play.</p>
+        <p>Commodities have a <b>quality</b> factor. The quality of environmental commodities is uniform across each planet. For example, the quality of stone does not vary no matter where mines are built on the same planet; however, the quality of stone will likely be different on another planet. The quality of manufactured commodities is based on the average of the qualities of the commodities consumed by the process. When calculating the average, Farming processes include an additional quality factor that is determined by the planet; the planet provides a quality factor for each different farming commodity that can be produced. For example, when growing grapes, the quality of the resulting grapes is based on the quality of the water, the sunlight, and a planet-wide grape quality factor. Consequently different farm products are not the same quality; grapes will have a different quality than vegetables, beans or fruit. If the quality was based only on sunlight and water, all produce from the same planet would be the same quality. The quality factor of all commodities ranges from 1 to 255, with 255 the best and 1 the worst.</p>
+        <p>The quality determines the rate of failure of the commodity when it is used. A low quality tool will wear out faster than a good quality tool. Commodities may fail when fetched from the <a href="cities.html">city's inventory</a> for <a href="construction.html">construction</a> or <a href="manufacture.html">manufacturing</a>. Each commodity that fails adds one unit of labor to the process before disintegrating.</p>
+        <p>The quality affects the value of a commodity. Higher quality commodities are more expensive than lower quality commodities. When selling cargo, a prospective city might not be interested in buying low quality merchandise but will usually offer a high price for good quality merchandise.</p>
+        <img src="images/icons/c_TechLevel.png" align="left" width="32"/>
+        <p>Technology objects raise the tech level of a building. Technology made in your empire will raise a building up to the tech level of the technology. Technology made in another empire will only raise a building by one tech level, regardless of how much the technology object exceeds the tech level of the building. A technology object will never lower the tech level of a building.</p>
+        <img src="images/icons/c_BayModule.png" align="left" width="32"/>
+        <p>Upgrade modules affect systems of spacecraft. An upgrade module may change the type of a system. e.g. A cloaking shield upgrade will change an energy shield into a cloaking shield; an atmosphere collector bay upgrade will change the type of a weapon bay. Upgrade modules may also change the tech level of a spacecraft system.</p>
+
+        <table class="bordered">
+            <thead>
+                <tr>
+                    <th data-field="icon">Icon</th>
+                    <th data-field="commodity">Commodity</th>
+                    <th data-field="made">Made By</th>
+                    <th data-field="tl">TL</th>
+                    <th data-field="notes">Notes</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th><img src="images/icons/c_Air.png" align="left" width="32"/></th>
+                    <th>Air</th>
+                    <th>Refinery <br/>Spacecraft Atmosphere Collector</th>
+                    <th>1</th>
+                    <th>Purified air ready to breathe. This is a mixture, not pure oxygen.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_TechLevel.png" align="left" width="32"/></th>
+                    <th>Aircraft Technology</th>
+                    <th>Aircraft Factor <br/>University</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_TechLevel.png" align="left" width="32"/></th>
+                    <th>Airport Repair Shop Technology</th>
+                    <th>Airport Repair Shop <br/>University</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_TechLevel.png" align="left" width="32"/></th>
+                    <th>Airport Terminal Technology</th>
+                    <th>Airport Terminal <br/>University</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_Animal.png" align="left" width="32"/></th>
+                    <th>Animal Carcass</th>
+                    <th>Farm</th>
+                    <th>1</th>
+                    <th>An animal that is no longer alive.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_AnimalMeat.png" align="left" width="32"/></th>
+                    <th>Animal Meat</th>
+                    <th>Meat Processing Plant</th>
+                    <th>1</th>
+                    <th>Beef--It's what's for dinner.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_Antidote.png" align="left" width="32"/></th>
+                    <th>Antidote</th>
+                    <th>Pharmaceutical Lab</th>
+                    <th>1</th>
+                    <th>Cures desease.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_AntifluxParticles.png" align="left" width="32"/></th>
+                    <th>Antiflux Particles</th>
+                    <th>Spacecraft Particle Collector Bay</th>
+                    <th>28</th>
+                    <th>Solar particles collected from eddies in the rocky rings around planets using particle collector bays on spacecraft. Prevalence decreases as orbit zone gets colder.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_Antitoxin.png" align="left" width="32"/></th>
+                    <th>Antitoxin</th>
+                    <th>Pharmaceutical Lab</th>
+                    <th>1</th>
+                    <th>Cures disease.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_TechLevel.png" align="left" width="32"/></th>
+                    <th>Apartment Technology</th>
+                    <th>Apartment <br/>University</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_APC.png" align="left" width="32"/></th>
+                    <th>APC - Armored Personnel Carrier</th>
+                    <th>Vehicle Factory</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_TechLevel.png" align="left" width="32"/></th>
+                    <th>Arena Technology</th>
+                    <th>Arena <br/>University</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_TechLevel.png" align="left" width="32"/></th>
+                    <th>Armorer Technology</th>
+                    <th>Armorer </br>University</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_BayModule.png" align="left" width="32"/></th>
+                    <th>Atmosphere Condenser Bay Module</th>
+                    <th>Airport Repair Shop</th>
+                    <th>6</th>
+                    <th>Harvests air, cryozine, hydrogen, and ioplasma from the atmospheres of planets.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_Atmosphere.png" align="left" width="32"/></th>
+                    <th>Atmosphere Density</th>
+                    <th>Atmosphere Density of Inner, Habitable of Outer World</th>
+                    <th>1</th>
+                    <th>Environmental factor that cannot actually be possessed. Used by manufacturing processes that acquire atmosphere from the environment, such as purification of Air or extraction of Hydrogen from the atmosphere.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_Backpack.png" align="left" width="32"/></th>
+                    <th>Backpack</th>
+                    <th>Clothing Factory</th>
+                    <th>1</th>
+                    <th>This handy container hold items in a grid that is 6x8 grid squares.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_TechLevel.png" align="left" width="32"/></th>
+                    <th>Bakery Technology</th>
+                    <th>Bakery <br/>University</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_TechLevel.png" align="left" width="32"/></th>
+                    <th>Bank Technology</th>
+                    <th>Bank <br/>University</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_BayModule.png" align="left" width="32"/></th>
+                    <th>Beam Laser Bay Module</th>
+                    <th>Airport Repair Shop</th>
+                    <th>5</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_TurretModule.png" align="left" width="32"/></th>
+                    <th>Bream Laser Turrent Module</th>
+                    <th>Airport Repair Shop</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_Beans.png" align="left" width="32"/></th>
+                    <th>Beans</th>
+                    <th>Farm</th>
+                    <th>1</th>
+                    <th>Beans--the magical fruit.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_Beer.png" align="left" width="32"/></th>
+                    <th>Beer</th>
+                    <th>Brewery</th>
+                    <th>1</th>
+                    <th>Where man goes, so goes beer.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_BlankDisk.png" align="left" width="32"/></th>
+                    <th>Blank Disk</th>
+                    <th>Electronics Factory</th>
+                    <th>1</th>
+                    <th>Don't Copy that Floppy!</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_Bolite.png" align="left" width="32"/></th>
+                    <th>Bolite</th>
+                    <th>Mine <br/>Spacecraft Mineral Collector</th>
+                    <th>25</th>
+                    <th>A naturally occurring Bose-Einstein Condensate. Can be mined in extremely cold environments.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_Bomb.png" align="left" width="32"/></th>
+                    <th>Bomb</th>
+                    <th>Munitions Factory</th>
+                    <th>1</th>
+                    <th>Component of Large Rockets and Large Missiles. Can directly be used as a remotely detonated device. Capabilities of bombs vary depending upon the specialization and tech level of the Munitions Factory.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_Bone.png" align="left" width="32"/></th>
+                    <th>Bone</th>
+                    <th>Meat Processing Plant</th>
+                    <th>1</th>
+                    <th>He just couldn't handle the meat...</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_BorexinoPrecipitate.png" align="left" width="32"/></th>
+                    <th>Borexino Preciptate</th>
+                    <th>Spacecraft Particle Collector Bay</th>
+                    <th>30</th>
+                    <th>A component of the coronal ejecta of stars. Borexino particles precipitate in the high density atmospheres of gas giants. Can only be collected by spacecraft equipped with particle collector bays. Prevalence increases as stellar current increases. i.e. most prevalent around type O stars and least prevalent around type M stars.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_Bread.png" align="left" width="32"/></th>
+                    <th>Bread</th>
+                    <th>Baker</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_TechLevel.png" align="left" width="32"/></th>
+                    <th>Brewery Technology</th>
+                    <th>Brewery <br/>University</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_TechLevel.png" align="left" width="32"/></th>
+                    <th>Broker Technology</th>
+                    <th>Broker <br/>University</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_BuildingDesignDisk.png" align="left" width="32"/></th>
+                    <th>Building Design Disk</th>
+                    <th>Design Studio by Purchase or Burn of Design Disk</th>
+                    <th>1</th>
+                    <th>Stores a builiding design. Use it when planning a new building. Also use it to publish your designs in other empires by selling it at their design studios.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_BuildingDesignDrawing.png" align="left" width="32"/></th>
+                    <th>Building Design Drawing</th>
+                    <th>Design Studio by Purchase or Burn of Design Drawing</th>
+                    <th>1</th>
+                    <th>Stores a builiding design. Use it when planning a new building. Also use it to publish your designs in other empires by selling it at their design studios.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_Candy.png" align="left" width="32"/></th>
+                    <th>Candy</th>
+                    <th>Bakery</th>
+                    <th>1</th>
+                    <th>"Enough Chit-Chat... Time is Candy!"</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_BayModule.png" align="left" width="32"/></th>
+                    <th>Cannon Bay Module</th>
+                    <th>Airport Repair Shop</th>
+                    <th>2</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_TechLevel.png" align="left" width="32"/></th>
+                    <th>Cantina Technology</th>
+                    <th>Cantina <br/>University</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_TechLevel.png" align="left" width="32"/></th>
+                    <th>Capitol Technology</th>
+                    <th>Capitol <br/>University</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_TechLevel.png" align="left" width="32"/></th>
+                    <th>Carpenter Technology</th>
+                    <th>Carpenter <br/>University</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_TechLevel.png" align="left" width="32"/></th>
+                    <th>Casino Technology</th>
+                    <th>Casino <br/>University</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_Cheese.png" align="left" width="32"/></th>
+                    <th>Cheese</th>
+                    <th>Farm</th>
+                    <th>1</th>
+                    <th>Don't forget the cheese.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_TechLevel.png" align="left" width="32"/></th>
+                    <th>Church Technology</th>
+                    <th>Church <br/>University</th>
+                    <th>1</th>
+                    <th>What is Targoss???</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_Clamp.png" align="left" width="32"/></th>
+                    <th>Clamp</th>
+                    <th>Machine Shop <br/>Plastics Factory</th>
+                    <th>1</th>
+                    <th>Tool for working with Cryo Heat Sinks. Needed to repair Cryo Heat Sink damage to spacecraft systems.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_ShieldModule.png" align="left" width="32"/></th>
+                    <th>Cloaking Shield Module</th>
+                    <th>Airport Repair Shop</th>
+                    <th>25</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_TechLevel.png" align="left" width="32"/></th>
+                    <th>Clothing Factory Technology</th>
+                    <th>Clothing Factory <br/>University</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_Coal.png" align="left" width="32"/></th>
+                    <th>Coal</th>
+                    <th>Mine <br/>Spacecraft Mineral Collector</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_TechLevel.png" align="left" width="32"/></th>
+                    <th>Coal Power Plant Technology</th>
+                    <th>Coal Power Plant <br/>University</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_CommandAndControlModule.png" align="left" width="32"/></th>
+                    <th>Command and Control Module</th>
+                    <th>Airport Repair Shop</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_CommercialShip.png" align="left" width="32"/></th>
+                    <th>Commercial Ship</th>
+                    <th>Ship Yard</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_Computer.png" align="left" width="32"/></th>
+                    <th>Computer</th>
+                    <th>Computer Factory</th>
+                    <th>1</th>
+                    <th>When you start manufacturing computers, be prepared to make a lot of them. Most manufacturing and construction processes benefit from computers but few require them. A big city will soak up a lot of computers due to routine usage.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_TechLevel.png" align="left" width="32"/></th>
+                    <th>Computer Factory Technology</th>
+                    <th>Computer Factory <br/>University</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_TechLevel.png" align="left" width="32"/></th>
+                    <th>Condominium Technology</th>
+                    <th>Condominiom <br/>University</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_Crate.png" align="left" width="32"/></th>
+                    <th>Crate</th>
+                    <th>Carpenter <br/>Plastics Factory</th>
+                    <th>1</th>
+                    <th>The largest container a person can carry. The size exactly matches the maximum size object that will fit into a person's back and hand locations. A person can carry three crates at once but they might not be strong enough to move if the crates are full.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_Money.png" align="left" width="32"/></th>
+                    <th>Cronodollars</th>
+                    <th>Machine Shop</th>
+                    <th>1</th>
+                    <th>Cronodollars are manufactured from metal, magmium or vulcium. Cronodollars are the default commodity for trade. They are money.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_CryoHeatSink.png" align="left" width="32"/></th>
+                    <th>Cryo Heat Sink</th>
+                    <th>Machine Shop</th>
+                    <th>4</th>
+                    <th>Heat dissipation component of Power Armor, spacecraft Weapon systems, and spacecraft Shields. Manufactured using Cryozine.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_Cryozine.png" align="left" width="32"/></th>
+                    <th>Cryozine</th>
+                    <th>Refinery <br/>Spacecraft Atmosphere Collector</th>
+                    <th>4</th>
+                    <th>Toxic compound filtered from extremely cold atmospheres.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_CrystalJewelry.png" align="left" width="32"/></th>
+                    <th>Crystal Necklace</th>
+                    <th>Jeweler</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_Crystals.png" align="left" width="32"/></th>
+                    <th>Crystals</th>
+                    <th>Mine <br/>Spacecraft Mineral Collector</th>
+                    <th>1</th>
+                    <th>Can be mined on every world. Always present in the environment.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_MedicalModule.png" align="left" width="32"/></th>
+                    <th>Cybernetics Medical Module</th>
+                    <th>Airport Repair Shop</th>
+                    <th>22</th>
+                    <th>Performs cybernetic modifications to people and other creatures.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_TechLevel.png" align="left" width="32"/></th>
+                    <th>Design Studio Technology</th>
+                    <th>Design Studio <br/>University</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_TechLevel.png" align="left" width="32"/></th>
+                    <th>Distillery Technology</th>
+                    <th>Distillery <br/>University</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_DNASample.png" align="left" width="32"/></th>
+                    <th>DNA Sample</th>
+                    <th>DNA Sample Kit</th>
+                    <th>1</th>
+                    <th>Contains a DNA sample that has been collected using a DNA Sample Kit. The DNA Sample Kit turns into a DNA Sample when it is used.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_DNASampleKit.png" align="left" width="32"/></th>
+                    <th>DNA Sample Kit</th>
+                    <th>Pharmaceutical Lab</th>
+                    <th>1</th>
+                    <th>Collects a DNA sample from a living creature or from an animal carcass.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_Dynamite.png" align="left" width="32"/></th>
+                    <th>Dynamite</th>
+                    <th>Munitions Factory</th>
+                    <th>1</th>
+                    <th>Useful when mining. Component of Bombs, Small rockets and Small Missiles. Can directly be used as a time-delay fuse device. Capabilities of explosives vary depending upon the specialization and tech level of the Munitions Factory.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_Eggs.png" align="left" width="32"/></th>
+                    <th>Eggs</th>
+                    <th>Farm</th>
+                    <th>1</th>
+                    <th>Eggy Weggs.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_Electricity.png" align="left" width="32"/></th>
+                    <th>Electricity</th>
+                    <th>Coal Power Plant <br/>Gasoline Power Plant <br/>Hydroelectric Power Plant <br/>Hydrogen Power  <br/>Natural Gas Power Plant <br/>Nuclear Power Plant <br/>Solar Power Plant <br/>Wind Power Plant</th>
+                    <th>1</th>
+                    <th>Cities use lots of these but you can't carry one in your backpack.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_ElectronicPart.png" align="left" width="32"/></th>
+                    <th>Electronic Part</th>
+                    <th>Electronics Factory</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_TechLevel.png" align="left" width="32"/></th>
+                    <th>Electronics Factory Technology</th>
+                    <th>Electronics Factory <br/>University</th>
+                    <th>1</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_Eludium.png" align="left" width="32"/></th>
+                    <th>Eludium</th>
+                    <th>Mine <br/>Spacecraft Mineral Collector</th>
+                    <th>1</th>
+                    <th>Soft and malleable, exhibiting super-conducting properties. Used to manufacture Grav Couplings. Destroyed by contact with atmosphere. Destroyed by smelting.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_ShieldModule.png" align="left" width="32"/></th>
+                    <th>Energy Shield Module</th>
+                    <th>Airport Repair Shop</th>
+                    <th>4</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_VacSuit.png" align="left" width="32"/></th>
+                    <th>Environment Suit</th>
+                    <th>Armorer</th>
+                    <th>1</th>
+                    <th>One environment fits all. The built-in light is a nice touch. Avoid the magma; it's just a space suit.</th>
+                </tr>
+                <tr>
+                    <th><img src="images/icons/c_VacSuitHelmet.png" align="left" width="32"/></th>
+                    <th>Environment Suit Helmet</th>
+                    <th>Armorer</th>
+                    <th>1</th>
+                    <th>Helmet for environment suit.</th>
+                </tr>
+
+
+
+
+                <tr>
+                    <th><img src="images/icons/" align="left" width="32"/></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </tbody>
+        </table>
+
+        <a href="" class="btn-large waves-effect waves-light center-align">Next () -> Topics/Communication</a>
+    </div>
+</main>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="/js/materialize.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $(".dropdown-button").dropdown({hover: false});
+        $(".collapsible").collapsible();
+        $('.parallax').parallax();
+        $('.button-collapse').sideNav();
+        $(".collapsible-header.active").click();
+    });
+</script>
+</body>
+</html>
